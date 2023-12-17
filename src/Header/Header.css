@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    background-color: var(--secondary);
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: inset;
+    border-radius: 1rem;
+    box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    position: relative;
+    min-height: 13vh;
+    max-height: 13vh;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.pfp {
+    width: 10vh;
+    height: 8vh;
+    margin-left: 8vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-image: url(./Images/Headshot.jpg);
+    background-size: 100%;
+    background-position: center -10px;
+    background-repeat: no-repeat;
+    clip-path: circle();
+    transition: 0.2s;
+}
+
+.pfp:hover {
+    transform: scale(1.05);
+}
+
+.PersonalInfo {
+    display: flex;
+    flex-direction: column;
+    height: 6vh;
+    align-items: space-between;
+    justify-content: space-between;
+    font-size: 16pt;
+    font-weight: bold;
+    color:antiquewhite;
+}
+
+.instagram {
+    padding-right: 10vh;
+}
+
+.rightside {
+    display: flex;
+    gap: 5vh;
+    align-items: center;
+    padding-right: 10vh;
+}
+
+.linkedin {
+    max-width: 7vh;
+    transition: 0.1s ease-in-out;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.linkedin:hover{
+    transform: scale(1.05);
+}
+
