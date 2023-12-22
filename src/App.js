@@ -9,9 +9,10 @@ function App() {
 
   useEffect(() => {
     const onPageLoad = () => {
-      console.log('Page loaded')
+      let width = window.screen.width;
+      console.log('Page Loaded')
       const slider = document.getElementById('slider')
-      if (!window.matchMedia("(preferes-reduced-motion: reduce)").matches) {
+      if (!window.matchMedia("(preferes-reduced-motion: reduce)").matches && width >= 600) {
           slider.setAttribute("infiniteScrolling", true)
 
           const scroller = document.getElementById('scroller')
@@ -38,7 +39,7 @@ function App() {
     <div className="App">
       <Header/>
       <Body/>
-      <div className='gap'>test</div>
+      <div className='gap'></div>
       <Experience/>
     </div>
   </>
