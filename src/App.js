@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const onPageLoad = () => {
       let width = window.screen.width;
-      console.log('Page Loaded')
+      console.log(width)
       const slider = document.getElementById('slider')
       if (!window.matchMedia("(preferes-reduced-motion: reduce)").matches && width >= 600) {
           slider.setAttribute("infiniteScrolling", true)

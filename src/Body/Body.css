@@ -1,4 +1,50 @@
-@media (max-width: 699px) { 
+@media (min-width: 200px) and (max-width: 399px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--primary);
+        position: relative;
+        z-index: 0;
+        height: 70vh;
+        overflow: hidden;
+    }
+    
+    .LeftText {
+        display: flex;
+        height: 45%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        padding-bottom: 0%;
+        align-items: center;
+        z-index: 0;
+        position: relative;
+        background: radial-gradient(circle at center, #374040, var(--primary) 25%);
+    }
+
+    .bodyText {
+        font-size: 12pt;
+    }
+
+    .headerText {
+        font-size: 25pt;
+    }
+
+    .imageContainer {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bigImage {
+        height: 70%;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 699px) { 
     .parent {
         display: column;
         width: 100%;
@@ -6,6 +52,7 @@
         position: relative;
         z-index: 0;
         height: 45vh;
+        overflow: hidden;
     }
     
     .LeftText {
@@ -43,9 +90,64 @@
     .bigImage {
         height: 70%;
     }
+
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width: 949px) {
+    .parent {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--primary);
+        position: relative;
+        z-index: 0;
+        min-height: 39.5vh;
+        max-height: 39.5vh;
+    }
+
+    .LeftText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 60%;
+        align-items: center;
+        z-index: 0;
+        position: relative;
+        background: radial-gradient(circle at center, #374040, var(--primary) 25%);
+    }
+
+    .headerText {
+        font-size: 25pt;
+    }
+
+    .bodyText {
+        font-size: 15pt;
+    }
+
+    .imageContainer {
+        width: 40%;
+    }
+
+    .bigImage {
+        height: 40%;
+    }
+}
+
+@media (min-width: 950px) {
+
+    @media (max-width: 1050px) {
+        .bigImage {
+            height: 40%;
+        }
+    }
+
+    @media (min-width: 1051px) {
+        .bigImage {
+            height: 70%;
+        }
+    }
 
     .parent {
         display: flex;
@@ -91,7 +193,28 @@
     }
 
     .bigImage {
-        height: 70%;
         filter: drop-shadow(0px 0px 10px);
     }
 }
+
+
+.headerText {
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.bodyText {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigImage {
+    filter: drop-shadow(0px 0px 10px);
+}
+
